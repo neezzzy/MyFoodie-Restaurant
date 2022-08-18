@@ -140,10 +140,15 @@ img {
   width: 100%;
 }
 
+.delivery-product {
+  padding: 0px;
+  margin: 0px;
+}
+
 .delivery-product ul li {
   height: 70px;
   display: flex; /* allows align-items to work below */
-  justify-content: start; /* Horizontally centers single-line elements */
+  justify-content: center; /* Horizontally centers single-line elements */
   text-align: center; /* Horizontally centers text within line-wrapped elements */
   align-items: center; /* vertical */
   font-weight: 800;
@@ -168,4 +173,51 @@ img {
   padding: 5px;
   border-radius: 5px;
   margin: 5px;
+}
+
+@media screen and (max-width: 375px) {
+  img {
+    display: none;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-title {
+    width: 100%;
+  }
+  .explore-btn {
+    font-size: 90%;
+  }
+  .list-product {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .explore-btn {
+    font-size: 95%;
+  }
+
+  .takeout {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
