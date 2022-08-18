@@ -30,6 +30,9 @@ p {
 }
 
 /* header navigation */
+header {
+  padding: 10px 10px 0 10px;
+}
 header nav {
   font-weight: 900;
   font-size: 1.2rem;

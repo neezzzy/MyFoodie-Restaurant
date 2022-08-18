@@ -75,13 +75,19 @@
 
         <div class="delivery-product" id="delivery">
 
-          <ul role="group"
-            class="list-product d-flex justify-content-center m-0 p-0 align-items-center text-center btn-group gap-5">
-            <li type="button" class="bg-dark text-white w-50 rounded">In-House Delivery</li>
-            <li type="button" class="bg-light text-dark w-50 rounded">Third Party Delivery</li>
-          </ul>
+          <div id="products"
+            class=" d-flex justify-content-center m-0 p-0 align-items-center text-center btn-group gap-5">
+            <input type="radio" class="btn-check" value="in-house" name="options" id="option1" checked
+              autocomplete="off" />
+            <label class="btn btn-lg btn-dark" for="option1">In-House Delivery</label>
 
-          <div class="row p-5 product">
+            <input type="radio" class="btn-check" value="third-party" name="options" id="option2" autocomplete="off" />
+            <label class="btn btn-lg btn-dark" for="option2">Third Party Delivery</label>
+
+          </div>
+
+
+          <div class="row p-5 in-house-delivery">
             <div class="col-md  img-container">
               <img class="rounded" src="./images/map.jpg" />
             </div>
@@ -93,6 +99,21 @@
               <button class="btn btn-lg bg-danger text-white">Order Now</button>
             </div>
           </div>
+
+          <div class="row p-5 product third-party-delivery d-none">
+            <div class="col-md  img-container">
+              <img class="rounded" src="./images/delivery.jpg" />
+            </div>
+            <div class="col">
+              <h2>Third Party Delivery</h2>
+              <p>Aut deleniti voluptatem est quisquam fugit et molestiae autem nam vero alias. Rem saepe praesentium aut
+                doloribus perferendis est libero internos ut soluta quam eum necessitatibus temporibus qui galisum
+                consequatur ut facere illo</p>
+              <button class="btn btn-lg bg-danger text-white">Order Now</button>
+            </div>
+          </div>
+
+
         </div>
       </div>
 
