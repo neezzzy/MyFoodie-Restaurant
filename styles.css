@@ -1,0 +1,171 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* header navigation */
+header nav {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+nav ul li :hover {
+  background-color: rgb(235, 233, 233);
+}
+
+img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* hero section */
+
+.hero-title {
+  width: 70%;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+}
+
+.img-container {
+  overflow: hidden;
+  max-height: 600px;
+}
+
+.btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* features sections */
+
+.footer-container {
+  background-color: #1e1e1e;
+  color: #eff0f3;
+  text-align: center;
+}
+
+.footer-container .phone {
+  font-weight: 900;
+}
+
+/* MENU */
+
+/* jumbotron */
+.jumbotron {
+  background-color: #bfd7eb;
+  height: 500px;
+}
+
+.jumbotron > * {
+  flex: 1;
+}
+
+/* order section */
+.orders-section ul {
+  list-style-type: none;
+}
+
+.order-list li {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 150px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.order-list li a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.cool-link {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+}
+
+.cool-link:hover {
+  color: rgb(65, 65, 65);
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #aa0e0f;
+  transition: width 0.3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+}
+
+.delivery-product ul li {
+  height: 70px;
+  display: flex; /* allows align-items to work below */
+  justify-content: start; /* Horizontally centers single-line elements */
+  text-align: center; /* Horizontally centers text within line-wrapped elements */
+  align-items: center; /* vertical */
+  font-weight: 800;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.feature-icon {
+  width: 50%;
+  height: auto;
+  padding: 15px;
+  margin: 10px;
+}
+
+.coupon {
+  border: #aa0e0f 6px dashed;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}

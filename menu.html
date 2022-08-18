@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
 
 <head>
@@ -17,7 +13,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container">
     <!-- navigation -->
     <header>
       <nav class="navbar navbar-expand-lg bg-light">
@@ -42,46 +38,107 @@
                 <a class="nav-link" aria-current="page" href="./coupon.html">Coupon</a>
               </li>
             </ul>
+            <span><img class="p-2 icon" src="./images/basket.svg" width="50px" /></span>
           </div>
       </nav>
     </header>
+
     <!-- jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container-fluid">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-          featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="jumbotron d-flex align-items-stretch align-content-center justify-content-center ">
+      <div class="p-5 d-flex align-items-center justify-content-center">
+        <div class="hero-title">
+          <h3>Get Started</h3>
+          <h1>Selecting An Order Type</h2>
+            <p class="lead">Eos placeat rerum porro iusto qui iusto esse ut eligendi rerum eum laborum nisi et Quis odit aut amet necessitatibus.</p>
+        </div>
+
+      </div>
+      <div class="img-container">
+        <img class="hero-img" src="./images/pizza.png" alt="" />
       </div>
     </div>
 
-
-  </div>
-  <!-- footer -->
-  <div class="container">
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-fix-contrast="true"
-            style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-fix-contrast="true"
-            style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-fix-contrast="true"
-            style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-fix-contrast="true"
-            style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-fix-contrast="true"
-            style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">About</a></li>
+    <!-- navigation on page -->
+    <section class="orders-section">
+      <ul class="p-4 order-list d-flex justify-content-center">
+        <li><a class="cool-link" href="#delivery">Delivery</a></li>
+        <li><a class="cool-link" href="#takeout">Takeout</a></li>
+        <li><a class="cool-link" href="#dine-in">Dine-In</a></li>
       </ul>
-      <p class="text-center text-muted" data-fix-contrast="true"
-        style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">© 2021 Company, Inc</p>
-    </footer>
+
+      <div class="delivery-container">
+        <h2>Delivery Orders</h2>
+        <p>Lorem ipsum dolor sit amet. Eos placeat rerum porro iusto qui iusto esse ut eligendi rerum eum laborum nisi et Quis odit aut amet necessitatibus. Non laborum aliquam et officiis totam sit saepe rerum et reprehenderit cupiditate sit reprehenderit amet rem quas tempora.</p>
+
+        <div class="delivery-product" id="delivery">
+
+          <ul role="group" class="d-flex justify-content-center align-items-center text-center btn-group gap-5">
+            <li type="button" class="bg-dark text-white w-50 p-2 rounded">In-House Delivery</li>
+            <li type="button" class="bg-light text-dark w-50 p-2  rounded">Third Party Delivery</li>
+          </ul>
+          
+          <div class="row p-5 rounded">
+            <div class="col img-container">
+              <img src="./images/map.jpg" />
+            </div>
+            <div class="col">
+              <h2>In-House Delivery</h2>
+              <p>Lorem ipsum dolor sit amet. Eos placeat rerum porro iusto qui iusto esse ut eligendi rerum eum laborum nisi et Quis odit aut amet necessitatibus. Non laborum aliquam et officiis totam sit saepe rerum et reprehenderit cupiditate sit reprehenderit amet rem quas tempora.</p>
+              <button class="btn btn-lg bg-danger text-white">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="row p-5" id="takeout">
+      <div class="col">
+        <h2>
+          Takeout Orders
+        </h2>
+        <p>Aut deleniti voluptatem est quisquam fugit et molestiae autem nam vero alias. Rem saepe praesentium aut doloribus perferendis est libero internos ut soluta quam eum necessitatibus temporibus qui galisum consequatur ut facere illo.</p>
+        <p>Lorem ipsum dolor sit amet. Eos placeat rerum porro iusto qui iusto esse ut eligendi rerum eum laborum nisi et Quis odit aut amet necessitatibus.</p>
+        <button class="btn btn-lg bg-danger text-white">Order Takeout</button>
+      </div>
+
+      <div class="col img-container rounded">
+        <img src="./images/phone-order.jpg" alt="">
+      </div>
+
+    </div>
+
+    <div class="row p-5 rounded" id="dine-in">
+      <div class="col img-container flex-grow-1 flex-shrink-1">
+        <img src="./images/dine-in.jpg" alt="">
+      </div>
+
+      <div class="col">
+        <h2>
+          Dine-In Orders
+        </h2>
+        <p>Non voluptate voluptatem quo reiciendis dolor non nisi veritatis et veniam officiis 33 corrupti nihil hic quod galisum.</p>
+        <p>Et fugiat dolor et consectetur ipsum ad consequuntur nesciunt vel galisum ipsum ad sequi dolores. Ut molestias tempora ut molestias mollitia id pariatur eaque eos galisum voluptas. Id asperiores praesentium quo dignissimos sint a quaerat odit qui ratione impedit.</p>
+        <button class="btn btn-lg bg-danger text-white">Order Dine-In</button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-container d-flex justify-content-center align-items-center">
+      <footer class="py-3 my-4 flex-shrink-0">
+        <h2>Contact Us</h2>
+        <p class="text-muted">123 Main Street <br> Vancouver, BC, V4Z 6A2</p>
+        <p class="text-capitalize text-white phone">1-123-4-PHONE</p>
+        <button class="btn btn-lg btn-danger m-2">Sales Inquires</button>
+        <p class="p-4">© 2022 Ruslan Nizamov</p>
+      </footer>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./script.js" async defer></script>
 </body>
 

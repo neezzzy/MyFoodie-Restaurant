@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
 
 <head>
@@ -16,10 +12,10 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body>
+<body class="container">
   <!-- navigation -->
   <header>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg">
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -40,12 +36,53 @@
               <a class="nav-link" aria-current="page" href="./coupon.html">Coupon</a>
             </li>
           </ul>
+          <span><img class="p-2 icon" src="./images/basket.svg" width="50px" /></span>
         </div>
     </nav>
   </header>
-  <div class="container-fluid">
-    <h1>Coupons</h1>
 
+
+  <div class="bg-white">
+    <h1>Coupons</h1>
+    <p>Et fugiat dolor et consectetur ipsum ad consequuntur nesciunt vel galisum ipsum ad sequi dolores. Ut molestias
+      tempora ut molestias mollitia id pariatur eaque eos galisum voluptas.</p>
+
+    <div class="mt-4 shadow">
+
+      <div class="row pt-5 pb-5 m-5">
+        <div class="col">
+          <img class="rounded" src="./images/food.jpg" alt="" srcset="">
+        </div>
+
+        <div class="col">
+          <h2>Auto-Discover Coupons</h2>
+          <p>Aut deleniti voluptatem est quisquam fugit et molestiae autem nam vero alias. Rem saepe praesentium aut
+            doloribus perferendis est libero internos ut soluta quam eum necessitatibus temporibus qui galisum
+            consequatur ut facere illo.</p>
+
+          <div class="coupon">
+            <h3 class="text-danger">Free Delivery Over $35</h3>
+            <h5>No Coupon Necessary</h5>
+            <p>Et fugiat dolor et consectetur ipsum ad consequuntur nesciunt vel galisum ipsum ad sequi dolores.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- footer -->
+  <div class="footer-container d-flex justify-content-center align-items-center">
+    <footer class="py-3 my-4 flex-shrink-0">
+      <h2>Contact Us</h2>
+      <p class="text-muted">123 Main Street <br> Vancouver, BC, V4Z 6A2</p>
+      <p class="text-capitalize text-white phone">1-123-4-PHONE</p>
+      <button class="btn btn-lg btn-danger m-2">Sales Inquires</button>
+      <p class="p-4">© 2022 Ruslan Nizamov</p>
+    </footer>
+  </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

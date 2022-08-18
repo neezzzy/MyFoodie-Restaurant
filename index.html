@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
 
 <head>
@@ -17,7 +13,8 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="main container" id="page-content">
+    <!-- navigation -->
     <header>
       <nav class="navbar navbar-expand-lg bg-light">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -41,129 +38,86 @@
                 <a class="nav-link" aria-current="page" href="./coupon.html">Coupon</a>
               </li>
             </ul>
+            <span><img class="p-2 icon" src="./images/basket.svg" width="50px" /></span>
           </div>
       </nav>
     </header>
 
     <!-- hero container -->
-    <section class="hero">
-      <div class="row">
-        <div class="col d-flex flex-column align-content-center justify-content-center">
-          <h1>MyFoodie Restaurant</h1>
-          <p>Powerful, customized and fully integrated online ordering solutions for your restaurant. For more
-            information, contact us.</p>
-          <button class="btn btn-danger">Explore More</button>
+    <section class="jumbotron d-flex align-items-stretch align-content-center justify-content-center ">
+      <div class="p-5 d-flex align-items-center justify-content-center">
+        <div class="hero-title">
+          <h3>MyFoodie Restaurant</h3>
+          <h1>Online Demo</h1>
+          <p class="text-muted">Lorem ipsum dolor sit amet. Us solutions integrated information restaurant us solutions fully us restaurant contact and powerful restaurant us contact.</p>
+          <button class="btn btn-danger w-75">Explore Features & a Demo Order</button>
         </div>
-        <div class="col">
-          <img class="img-fluid" src="./images/pizza.jpg" alt="">
-        </div>
+
+      </div>
+      <div class="img-container">
+        <img class="hero-img" src="./images/pizza.png" alt="" />
       </div>
     </section>
     <!-- features -->
-    <section>
+    <section class="features">
       <div class="album py-5 bg-light">
         <div class="container">
-
+          <h2>The only online ordering platform you'll ever need.</h2>
+          <p>Your customers are ready to place orders. Get up and running today.</p>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
+            <!-- card 1 -->
+            <div class="col d-flex align-items-stretch">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                    dy=".3em">Thumbnail</text>
-                </svg>
-
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-fix-contrast="true"
-                        style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-fix-contrast="true"
-                        style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">Edit</button>
-                    </div>
-                    <small class="text-muted" data-fix-contrast="true"
-                      style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">9 mins</small>
-                  </div>
+                <div class="card-img">
+                  <img class="feature-icon" src="./images/credit-card.svg" class="feature-img" />
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h4 class="text-center">Fast & Easy Ordering</h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet. To your make tailored your to tailored service is service website we needs today. Our service simple to available your on tailored custom is your explore our them needs our simple make and your.
+                  </p>
+                  <button class="btn btn-danger btn-block w-100 mt-auto">Try The Demo</button>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                    dy=".3em">Thumbnail</text>
-                </svg>
 
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-fix-contrast="true"
-                        style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-fix-contrast="true"
-                        style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">Edit</button>
-                    </div>
-                    <small class="text-muted" data-fix-contrast="true"
-                      style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">9 mins</small>
-                  </div>
+            <div class="col d-flex align-items-stretch">
+              <div class="card shadow-sm">
+                <div class="card-img">
+                  <img class="feature-icon" src="./images/basket.svg" class="feature-img" />
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h4 class="text-center">Get Started Today</h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet. And have online are your fully a your with are with with we have up ordering accepting!
+                  </p>
+                  <button class="btn btn-danger btn-block w-100 mt-auto">Sign Up Today</button>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                    dy=".3em">Thumbnail</text>
-                </svg>
 
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-fix-contrast="true"
-                        style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-fix-contrast="true"
-                        style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">Edit</button>
-                    </div>
-                    <small class="text-muted" data-fix-contrast="true"
-                      style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">9 mins</small>
-                  </div>
+            <div class="col d-flex align-items-stretch">
+              <div class="card shadow-sm">
+                <div class="card-img">
+                  <img class="feature-icon" src="./images/chat-right-heart.svg" class="feature-img" />
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h4 class="text-center">Full Support</h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet. Id illum omnis sit deleniti nisi eos itaque nulla et velit labore a sint quisquam et aspernatur voluptatum. Qui soluta omnis ad quis quis non incidunt ullam est eligendi quia.
+                  </p>
+                  <button class="btn btn-danger btn-block w-100 mt-auto">Try The Demo</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
     <!-- footer -->
-    <div class="container">
-      <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-fix-contrast="true"
-              style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-fix-contrast="true"
-              style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-fix-contrast="true"
-              style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-fix-contrast="true"
-              style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-fix-contrast="true"
-              style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">About</a></li>
-        </ul>
-        <p class="text-center text-muted" data-fix-contrast="true"
-          style="opacity: 1 !important; color: rgb(77, 90, 101) !important;">© 2021 Company, Inc</p>
+    <div class="footer-container d-flex justify-content-center align-items-center">
+      <footer class="py-3 my-4 flex-shrink-0">
+        <h2>Contact Us</h2>
+        <p class="text-muted">123 Main Street <br> Vancouver, BC, V4Z 6A2</p>
+        <p class="text-capitalize text-white phone">1-123-4-PHONE</p>
+        <button class="btn btn-lg btn-danger m-2">Sales Inquires</button>
+        <p class="p-4">© 2022 Ruslan Nizamov</p>
       </footer>
     </div>
 
