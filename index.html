@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -17,14 +17,14 @@
     <!-- navigation -->
     <header>
       <nav class="navbar navbar-expand-lg bg-light">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        <button class="navbar-toggler" type="button" aria-label="toggle button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" aria-label="close button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
@@ -54,7 +54,7 @@
         </div>
       </div>
       <div class="img-container">
-        <img class="hero-img" src="./images/pizza.png" alt="" />
+        <img class="hero-img" src="./images/pizza.webp" alt="" />
       </div>
     </section>
     <!-- features -->
@@ -111,12 +111,12 @@
     </section>
     <!-- footer -->
     <div class="footer-container d-flex justify-content-center align-items-center">
-      <footer class="py-3 my-4 flex-shrink-0">
+      <footer class="py-3 my-4 flex-shrink-0 w-100">
         <h2>Contact Us</h2>
-        <p class="text-muted">123 Main Street <br> Vancouver, BC, V4Z 6A2</p>
+        <p class="text-white-50">123 Main Street <br> Vancouver, BC, V4Z 6A2</p>
         <p class="text-capitalize text-white phone">1-123-4-PHONE</p>
         <button class="btn btn-lg btn-danger m-2">Sales Inquires</button>
-        <p class="p-4">© 2022 Ruslan Nizamov</p>
+        <p class="p-4">© <span id="year"></span> Ruslan Nizamov</p>
       </footer>
     </div>
 

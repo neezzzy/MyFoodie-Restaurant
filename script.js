@@ -8,4 +8,8 @@ $(document).ready(function () {
       $(".third-party-delivery").addClass("d-none");
     }
   });
+
+
+  const currentYear = new Date().getFullYear();
+  $('#year').html(currentYear);
 });

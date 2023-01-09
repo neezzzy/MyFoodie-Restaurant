@@ -1,10 +1,15 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+body {
+  line-height: 1.5;
 }
 
 #page-content {
@@ -12,7 +17,7 @@ html {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 900;
 }
 
@@ -21,7 +26,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
@@ -33,6 +38,7 @@ p {
 header {
   padding: 10px 10px 0 10px;
 }
+
 header nav {
   font-weight: 900;
   font-size: 1.2rem;
@@ -46,6 +52,11 @@ img {
   width: 100%;
   height: 400px;
   object-fit: cover;
+}
+
+input[type="radio"] {
+  appearance: none;
+  padding: 5px;
 }
 
 /* hero section */
@@ -81,6 +92,7 @@ img {
   background-color: #1e1e1e;
   color: #eff0f3;
   text-align: center;
+
 }
 
 .footer-container .phone {
@@ -95,7 +107,7 @@ img {
   height: 500px;
 }
 
-.jumbotron > * {
+.jumbotron>* {
   flex: 1;
 }
 
@@ -151,10 +163,10 @@ img {
 
 .delivery-product ul li {
   height: 70px;
-  display: flex; /* allows align-items to work below */
-  justify-content: center; /* Horizontally centers single-line elements */
-  text-align: center; /* Horizontally centers text within line-wrapped elements */
-  align-items: center; /* vertical */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   font-weight: 800;
 }
 
@@ -180,41 +192,70 @@ img {
 }
 
 @media screen and (max-width: 375px) {
+
+  h1,
+  h2 {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+  }
+
   img {
     display: none;
   }
+
+  #products {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
   .main {
     display: flex;
     flex-direction: column;
     width: 100vw;
   }
+
   .jumbotron {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
+
   .hero-title {
     width: 100%;
   }
+
   .explore-btn {
     font-size: 90%;
   }
+
   .list-product {
     display: flex;
     flex-direction: column;
   }
+
+  h2 {
+    text-align: center;
+    padding: 5px;
+  }
+
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .main {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
   }
+
   .jumbotron {
     display: flex;
     flex-direction: column;
   }
+
   .explore-btn {
     font-size: 95%;
   }
@@ -222,5 +263,23 @@ img {
   .takeout {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .row h2 {
+
+    padding: 5px;
+  }
+
+
+  ul {
+    padding: 0;
+  }
+
+  .orders-section {
+    /* padding: 5px; */
   }
 }

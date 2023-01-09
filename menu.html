@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Menu</title>
-  <meta name="description" content="">
+  <meta name="description" content="Foodie restaurant menu page">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -17,14 +17,14 @@
     <!-- navigation -->
     <header>
       <nav class="navbar navbar-expand-lg bg-light">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        <button class="navbar-toggler" aria-label="toggle button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" aria-label="close button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
@@ -55,97 +55,85 @@
 
       </div>
       <div class="img-container">
-        <img class="hero-img " src="./images/pizza.png" alt="" />
+        <img class="hero-img " src="./images/pizza.webp" alt="" />
       </div>
     </div>
 
     <!-- navigation on page -->
-    <section class="orders-section container">
-      <ul class="p-4 order-list d-flex justify-content-center">
+    <section class="orders-section container pb-5">
+      <ul class="order-list d-flex justify-content-center">
         <li><a class="cool-link" href="#delivery">Delivery</a></li>
         <li><a class="cool-link" href="#takeout">Takeout</a></li>
         <li><a class="cool-link" href="#dine-in">Dine-In</a></li>
       </ul>
 
-      <div class="delivery-container container">
+      <div class="delivery-container">
         <h2>Delivery Orders</h2>
         <p>Lorem ipsum dolor sit amet. Eos placeat rerum porro iusto qui iusto esse ut eligendi rerum eum laborum nisi
           et Quis odit aut amet necessitatibus. Non laborum aliquam et officiis totam sit saepe rerum et reprehenderit
           cupiditate sit reprehenderit amet rem quas tempora.</p>
 
         <div class="delivery-product" id="delivery">
-
-          <div id="products"
-            class=" d-flex justify-content-center m-0 p-0 align-items-center text-center btn-group gap-5">
-            <input type="radio" class="btn-check" value="in-house" name="options" id="option1" checked
-              autocomplete="off" />
-            <label class="btn btn-lg btn-dark" for="option1">In-House Delivery</label>
-
-            <input type="radio" class="btn-check" value="third-party" name="options" id="option2" autocomplete="off" />
-            <label class="btn btn-lg btn-dark" for="option2">Third Party Delivery</label>
-
+          <div id="products" class="d-flex justify-content-center align-items-center text-center ">
+            <input type="radio" value="in-house" name="options" id="option1" checked autocomplete="off" />
+            <label class="btn btn-lg btn-dark w-100" for="option1">In-House Delivery</label>
+            <input type="radio" value="third-party" name="options" id="option2" autocomplete="off" />
+            <label class="btn btn-lg btn-dark w-100" for="option2">Third Party Delivery</label>
           </div>
 
 
-          <div class="row p-5 in-house-delivery">
-            <div class="col-md  img-container">
-              <img class="rounded" src="./images/map.jpg" />
+          <div class="row in-house-delivery pt-4">
+            <div class="col-md img-container">
+              <img class="rounded w-100" src="./images/map.webp" />
             </div>
-            <div class="col">
+            <div class="col ">
               <h2>In-House Delivery</h2>
               <p>Lorem ipsum dolor sit amet. Eos placeat rerum porro iusto qui iusto esse ut eligendi rerum eum laborum
                 nisi et Quis odit aut amet necessitatibus. Non laborum aliquam et officiis totam sit saepe rerum et
                 reprehenderit cupiditate sit reprehenderit amet rem quas tempora.</p>
-              <button class="btn btn-lg bg-danger text-white">Order Now</button>
+              <button class="btn btn-lg bg-danger text-white w-100">Order Now</button>
             </div>
           </div>
 
-          <div class="row p-5 product third-party-delivery d-none">
+          <div class="row pt-4 product third-party-delivery d-none">
             <div class="col-md  img-container">
-              <img class="rounded" src="./images/delivery.jpg" />
+              <img class="rounded w-100" src="./images/delivery.webp" />
             </div>
-            <div class="col">
+            <div class="col ">
               <h2>Third Party Delivery</h2>
               <p>Aut deleniti voluptatem est quisquam fugit et molestiae autem nam vero alias. Rem saepe praesentium aut
                 doloribus perferendis est libero internos ut soluta quam eum necessitatibus temporibus qui galisum
                 consequatur ut facere illo</p>
-              <button class="btn btn-lg bg-danger text-white">Order Now</button>
+              <button class="btn btn-lg bg-danger text-white w-100">Order Now</button>
             </div>
           </div>
-
-
         </div>
       </div>
 
-
-
-      <div class="row p-5 takeout" id="takeout">
+      <div class="row pt-4 takeout " id="takeout">
         <div class="col ">
           <h2>
             Takeout Orders
           </h2>
-
           <p>Aut deleniti voluptatem est quisquam fugit et molestiae autem nam vero alias. Rem saepe praesentium aut
             doloribus perferendis est libero internos ut soluta quam eum necessitatibus temporibus qui galisum
             consequatur
             ut facere illo.</p>
           <p>Lorem ipsum dolor sit amet. Eos placeat rerum porro iusto qui iusto esse ut eligendi rerum eum laborum nisi
             et Quis odit aut amet necessitatibus.</p>
-          <button class="btn btn-lg bg-danger text-white">Order Takeout</button>
+          <button class="btn btn-lg bg-danger text-white w-100">Order Takeout</button>
         </div>
-
         <div class="col-md img-container">
-          <img class="rounded" src="./images/phone-order.jpg" alt="">
+          <img class="rounded w-100" src="./images/phone-order.webp" alt="">
         </div>
-
       </div>
 
-      <div class="row p-5" id="dine-in">
+      <div class="row pt-4" id="dine-in">
         <div class="col-md  img-container flex-grow-1 flex-shrink-1">
-          <img class="rounded" src="./images/dine-in.jpg" alt="">
+          <img class="rounded w-100" src="./images/dine-in.webp" alt="">
         </div>
 
-        <div class="col">
+        <div class="col pb-4">
           <h2>
             Dine-In Orders
           </h2>
@@ -155,19 +143,20 @@
             molestias tempora ut molestias mollitia id pariatur eaque eos galisum voluptas. Id asperiores praesentium
             quo
             dignissimos sint a quaerat odit qui ratione impedit.</p>
-          <button class="btn btn-lg bg-danger text-white">Order Dine-In</button>
+          <button class="btn btn-lg bg-danger text-white w-100">Order Dine-In</button>
         </div>
       </div>
+
     </section>
 
     <!-- footer -->
-    <div class="footer-container d-flex justify-content-center align-items-center">
-      <footer class="py-3 my-4 flex-shrink-0">
+    <div class="footer-container d-flex justify-content-center align-items-center ">
+      <footer class="py-3 my-4 flex-shrink-0 w-100">
         <h2>Contact Us</h2>
-        <p class="text-muted">123 Main Street <br> Vancouver, BC, V4Z 6A2</p>
+        <p class="text-white-50">123 Main Street <br> Vancouver, BC, V4Z 6A2</p>
         <p class="text-capitalize text-white phone">1-123-4-PHONE</p>
         <button class="btn btn-lg btn-danger m-2">Sales Inquires</button>
-        <p class="p-4">© 2022 Ruslan Nizamov</p>
+        <p class="p-4">© <span id="year"></span> Ruslan Nizamov</p>
       </footer>
     </div>
   </div>
